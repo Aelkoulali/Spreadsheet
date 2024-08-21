@@ -1,6 +1,8 @@
 // Add Function to genrate numbers 
 const range = (start, end) => Array(end -start + 1).fill(start).map((element, index) => element + index);
 
+// Add Function to genrate letters
+const charRange = (start, end) => range(start, end);
 
 window.onload = () => {
     const container = document.getElementById("container");

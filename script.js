@@ -4,6 +4,7 @@ const range = (start, end) => Array(end -start + 1).fill(start).map((element, in
 // Add Function to genrate letters
 const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map((code) => String.fromCharCode(code));
 
+// Ad onload event 
 window.onload = () => {
     const container = document.getElementById("container");
     const createLabel = (name) => {
@@ -13,5 +14,6 @@ window.onload = () => {
         container.appendChild(label);
     }
 
+    const letters = charRange("A", "J");
   
   }

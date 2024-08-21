@@ -22,7 +22,8 @@ window.onload = () => {
             const input = document.createElement("input");
             input.type = "text";
             input.id = letter + number;
-            input.ariaLabel = input.id;
+            input.ariaLabel = letter + number;
+            container.appendChild(input);
         });
     });
   

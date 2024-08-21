@@ -1,5 +1,5 @@
 // Add Function to genrate numbers 
-const range = (start, end) => Array(end -start + 1);
+const range = (start, end) => Array(end -start + 1).fill(start);
 
 
 window.onload = () => {

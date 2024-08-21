@@ -2,7 +2,7 @@
 const range = (start, end) => Array(end -start + 1).fill(start).map((element, index) => element + index);
 
 // Add Function to genrate letters
-const charRange = (start, end) => range(start, end);
+const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0));
 
 window.onload = () => {
     const container = document.getElementById("container");

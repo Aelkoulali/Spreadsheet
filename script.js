@@ -1,3 +1,6 @@
+// Add calculate function
+const sum = nums => nums.reduce((acc, el) => acc + el, 0);
+
 // Add Function to genrate numbers 
 const range = (start, end) => Array(end -start + 1).fill(start).map((element, index) => element + index);
 

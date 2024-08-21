@@ -1,3 +1,7 @@
+// Add Function to genrate numbers 
+const range = (start, end) => Array();
+
+
 window.onload = () => {
     const container = document.getElementById("container");
     const createLabel = (name) => {

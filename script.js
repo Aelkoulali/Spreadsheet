@@ -47,6 +47,7 @@ window.onload = () => {
             input.type = "text";
             input.id = letter + number;
             input.ariaLabel = letter + number;
+            input.onchange = update;
             container.appendChild(input);
         });
     });
@@ -54,5 +55,5 @@ window.onload = () => {
   }
 // Declare update function 
 const update = (event) => {
-    input.onchange = update;
+    
 };

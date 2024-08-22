@@ -1,16 +1,19 @@
 // Declare an isEven function, return true if num is even, false otherwise 
 const isEven = (num) => num % 2 === 0;
 
-// Add calculate function
+// Declare calculate function
 const sum = nums => nums.reduce((acc, el) => acc + el, 0);
 
-// Add Function to genrate numbers 
+// Declare an average function : The average = The sum of all the numbers in the array / The length of the array
+const average = (nums) => sum(nums) / nums.length;
+
+// Declare Function to genrate numbers 
 const range = (start, end) => Array(end -start + 1).fill(start).map((element, index) => element + index);
 
-// Add Function to genrate letters
+// Declare Function to genrate letters
 const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map((code) => String.fromCharCode(code));
 
-// Ad onload event 
+// Add onload event 
 window.onload = () => {
     const container = document.getElementById("container");
     const createLabel = (name) => {

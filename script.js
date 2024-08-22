@@ -52,3 +52,5 @@ window.onload = () => {
     });
   
   }
+// Declare update function 
+const update = (event) => {};

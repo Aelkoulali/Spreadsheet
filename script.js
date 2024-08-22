@@ -1,11 +1,16 @@
-// Declare an isEven function, return true if num is even, false otherwise 
+// Declare isEven function, return true if num is even, false otherwise 
 const isEven = (num) => num % 2 === 0;
 
 // Declare calculate function
 const sum = nums => nums.reduce((acc, el) => acc + el, 0);
 
-// Declare an average function : The average = The sum of all the numbers in the array / The length of the array
+// Declare average function : The average = The sum of all the numbers in the array / The length of the array
 const average = (nums) => sum(nums) / nums.length;
+
+// Declare median function 
+const median = (nums) => {
+    const sorted = nums.slice().sort((a, b) => a - b);
+}
 
 // Declare Function to genrate numbers 
 const range = (start, end) => Array(end -start + 1).fill(start).map((element, index) => element + index);

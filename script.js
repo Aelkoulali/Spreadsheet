@@ -53,4 +53,6 @@ window.onload = () => {
   
   }
 // Declare update function 
-const update = (event) => {};
+const update = (event) => {
+    input.onchange = update;
+};

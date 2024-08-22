@@ -55,5 +55,5 @@ window.onload = () => {
   }
 // Declare update function 
 const update = (event) => {
-    
+    const element = event.target.element;    
 };

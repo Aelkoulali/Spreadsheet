@@ -1,3 +1,6 @@
+// Declare an isEven function, return true if num is even, false otherwise 
+const isEven = (num) => num % 2 === 0;
+
 // Add calculate function
 const sum = nums => nums.reduce((acc, el) => acc + el, 0);
 

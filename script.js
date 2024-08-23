@@ -28,6 +28,11 @@ const range = (start, end) => Array(end -start + 1).fill(start).map((element, in
 // Declare Function to genrate letters
 const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map((code) => String.fromCharCode(code));
 
+// Dclare Function to parse and evaluate the input string
+const evaFormula = (x, cells) => {
+
+};
+
 // Add onload event 
 window.onload = () => {
     const container = document.getElementById("container");

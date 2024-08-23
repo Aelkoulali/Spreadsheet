@@ -31,7 +31,7 @@ const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).
 // Dclare Function to parse and evaluate the input string
 const evaFormula = (x, cells) => {
     const idToText = (id) => cells.find((cell) => cell.id === id).value; 
-
+    const rangeRegex = /([A-J])/g;
 };
 
 // Add onload event 

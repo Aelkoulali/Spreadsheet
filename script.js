@@ -5,6 +5,8 @@ const infixToFunction = {
     "*": (x,y) => x * y,
     "/": (x,y) => x / y,
 };
+// Declare infixEval function
+const infixEval = (str, regex) => str.replace(regex, ()=> {});
 
 // Declare isEven function, return true if num is even, false otherwise 
 const isEven = (num) => num % 2 === 0;

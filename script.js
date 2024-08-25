@@ -40,7 +40,10 @@ const spreadsheetFunctions = {
 };
 
 // Declare applyFunction
-const applyFunction =str => {};
+const applyFunction =str => {
+    const noHigh = highPrecedence(str);
+    const infix = /([\d.]+)([+-])([\d.]+)/;
+};
 
 // Declare Function to genrate numbers 
 const range = (start, end) => Array(end -start + 1).fill(start).map((element, index) => element + index);

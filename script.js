@@ -39,6 +39,9 @@ const spreadsheetFunctions = {
     median,
 };
 
+// Declare applyFunction
+const applyFunction =str => {};
+
 // Declare Function to genrate numbers 
 const range = (start, end) => Array(end -start + 1).fill(start).map((element, index) => element + index);
 

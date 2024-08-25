@@ -1,6 +1,9 @@
 // Declare infixToFunction 
 const infixToFunction = {
-    
+    "+":(x,y) => x + y,
+    "-": (x, y) => x - y,
+    "*": (x,y) => x * y,
+    "/": (x,y) => x / y,
 };
 
 // Declare isEven function, return true if num is even, false otherwise 

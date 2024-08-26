@@ -46,6 +46,7 @@ const spreadsheetFunctions = {
     increment: nums => nums.map(element => element += 1),
     random: nums => Math.floor(Math.random() * (nums[0] + nums[1])),
     nodupes : nums => [...new Set(nums.values())],
+    "": {},
 };
 
 // Declare applyFunction

@@ -37,6 +37,7 @@ const spreadsheetFunctions = {
     sum,
     average,
     median,
+    even : nums => nums.filter(isEven),
 };
 
 // Declare applyFunction

@@ -57,7 +57,7 @@ const range = (start, end) => Array(end -start + 1).fill(start).map((element, in
 const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map((code) => String.fromCharCode(code));
 
 // Declare Function to parse and evaluate the input string
-const evaFormula = (x, cells) => {
+const evalFormula = (x, cells) => {
     const idToText = (id) => cells.find((cell) => cell.id === id).value; 
     const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;
     const rangeFromString = (num1, num2) => range(parseInt(num1), parseInt(num2));
@@ -67,6 +67,7 @@ const evaFormula = (x, cells) => {
     const cellRegex = /[A-J][1-9][0-9]?/gi;  
     const cellExpanded = rangeExpanded.replace(cellRegex, match => idToText(match.toUpperCase()));
     const functionExpanded = applyFunction(cellExpanded);
+    return functionExpanded === x ? functionExpanded : evalFormula(functionExpanded, cells);
 };
       
 
@@ -100,6 +101,6 @@ const update = (event) => {
     const element = event.target.element; 
     const value = element.value.replace(/\s/g,"");
     if (!value.includes(element.id) && value.startsWith('=')) {
-
+        element.value = evalFormula()
     }
 };

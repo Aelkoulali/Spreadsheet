@@ -40,6 +40,8 @@ const spreadsheetFunctions = {
     even : nums => nums.filter(isEven),
     firsttwo: nums => nums.slice(0,2),
     lasttwo: nums => nums.slice(nums.length - 2),
+    has2: nums => nums.includes(2),
+    increment: nums => nums.map(element => element += 1),
 
 };
 
